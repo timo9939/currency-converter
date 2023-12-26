@@ -1,0 +1,26 @@
+
+/* CSS Reset */
+body{
+  box-sizing:border-box  ;
+  margin:0;
+
+  background-color: rgb(110, 173, 254);
+}
+
+main{
+    background-color: white;
+    position: absolute;
+    left:30%;
+    top:20%;
+
+    padding: 1vw 3vw;
+
+    width: 40vw;
+}
+
+form{
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: 4;
+}
+
