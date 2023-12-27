@@ -5,6 +5,7 @@ body{
   margin:0;
 
   background-color: rgb(154, 184, 255);
+  font-family:  Arial, sans-serif;
 }
 
 nav{
@@ -36,6 +37,10 @@ main{
 
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+main h1{
+    color: rgb(18, 18, 19);
 }
 
 form{
