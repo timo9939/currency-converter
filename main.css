@@ -4,7 +4,7 @@ body{
   box-sizing:border-box  ;
   margin:0;
 
-  background-color: rgb(100, 144, 248);
+  background-color: rgb(154, 184, 255);
 }
 
 nav{
@@ -26,7 +26,7 @@ nav h1{
 }
 
 main{
-    background-color: rgb(142, 231, 247);
+    background-color: rgb(96, 170, 245);
     position: absolute;
     left:30%;
     top:20%;
