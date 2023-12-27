@@ -4,11 +4,29 @@ body{
   box-sizing:border-box  ;
   margin:0;
 
-  background-color: rgb(110, 173, 254);
+  background-color: rgb(100, 144, 248);
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 3vw;
+}
+
+nav h1{
+    align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+
+    font-size: 40px;
 }
 
 main{
-    background-color: white;
+    background-color: rgb(142, 231, 247);
     position: absolute;
     left:30%;
     top:20%;
@@ -24,3 +42,12 @@ form{
     grid-template-columns: 4;
 }
 
+#base_currency_container{
+    grid-column: 1/2;
+
+}
+
+
+#target_currency_container{
+    grid-column: 2/3;
+}
