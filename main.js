@@ -8,7 +8,9 @@ let inputAmount=$("#amount")
 
   // let GBPinput=prompt("Enter GBP amount")
   // console.log("GBP amount is", GBPinput)
-  
+
+let createOption
+
 fetch('https://v6.exchangerate-api.com/v6/'+api+'/pair/'+base_currency+'/'+target_currency)
 .then(res => res.json())
 .then(data => {console.log(data);
