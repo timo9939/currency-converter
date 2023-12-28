@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter</title>
     <link rel="stylesheet" href="./main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
     <nav><img src="./Big logo.png" alt="currency-convert" width="100px">
@@ -35,7 +36,8 @@
       </form>
 
       <button class="btn_class">Convert</button>
-      <output>Output is here</output>
+      <p>Rate:<output id="rate">Rate is here</output></p>
+      <output id="target_amount">0.000</output>
     </main>
   </body>
   <script src="/main.js"></script>
