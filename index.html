@@ -19,16 +19,12 @@
       <form action="">
         <label for="" id="from_label">From</label>
         <select name="base_currency" id="base_currency_container" class="input_box">
-          <option value="GBP">British Pound</option>
-          <option value="EUR">Euro</option>
-          <option value="USD">US Dollar</option>
+
         </select>
 
         <label for="" id="to_label">To</label>
         <select name="target_currency" id="target_currency_container" class="input_box">
-          <option value="GBP">British Pound</option>
-          <option value="EUR">Euro</option>
-          <option value="USD">US Dollar</option>
+
         </select>
 
         
@@ -37,13 +33,13 @@
      
       </form>
 
-      <button onclick="convert()" class="btn_class">Convert</button>
+      <button  class="btn_class" id="convertBtn">Convert</button>
       <p>Rate:<output id="rate">Rate is here</output></p>
       <output id="target_amount">0.000</output>
     </main>
-  </body>
+
     <script type="module" src="./countryCode.js"></script>
     <script type="module" src="./main.js"></script>
-    <!-- <script src="package.json"></script> -->
 
+  </body>
 </html>
