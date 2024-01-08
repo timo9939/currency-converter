@@ -18,6 +18,15 @@ $.each(countryList, function (index, element) {
     .text(element)
     .attr("value", element)
     .appendTo(fromLabel)
+   
+    
+});
+
+$.each(countryList, function (index, element) {
+  console.log("foreach function works");
+  $("<option>")
+    .text(element)
+    .attr("value", element)
     .appendTo(toLabel)
     
 });
