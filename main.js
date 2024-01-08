@@ -5,20 +5,28 @@ let target_currency="EUR"
 let rate=$("#rate")
 let result=$("#target_amount")
 let inputAmount=$("#amount")
+const fromLabel= $("#base_currency_container")
 
   // let GBPinput=prompt("Enter GBP amount")
   // console.log("GBP amount is", GBPinput)
+ 
+import {countryList} from "./countryCode.js"
+$.each(countryList, function (index, element) {
+  console.log("foreach function works");
+  $("<option>")
+    .text(element)
+    .attr("value", element)
+    .appendTo(fromLabel);
+});
 
-let createOption
+// fetch('https://v6.exchangerate-api.com/v6/'+api+'/pair/'+base_currency+'/'+target_currency)
+// .then(res => res.json())
+// .then(data => {console.log(data);
+// rate.text(data.conversion_rate);
+// }
 
-fetch('https://v6.exchangerate-api.com/v6/'+api+'/pair/'+base_currency+'/'+target_currency)
-.then(res => res.json())
-.then(data => {console.log(data);
-rate.text(data.conversion_rate);
-}
-
-)
-.catch(err=>err())
+// )
+// .catch(err=>err())
 
 function convert(){
     console.log("inputAmount is", inputAmount.val());
