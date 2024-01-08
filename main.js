@@ -6,6 +6,7 @@ let rate=$("#rate")
 let result=$("#target_amount")
 let inputAmount=$("#amount")
 const fromLabel= $("#base_currency_container")
+const toLabel=$('#target_currency_container')
 
   // let GBPinput=prompt("Enter GBP amount")
   // console.log("GBP amount is", GBPinput)
@@ -16,8 +17,11 @@ $.each(countryList, function (index, element) {
   $("<option>")
     .text(element)
     .attr("value", element)
-    .appendTo(fromLabel);
+    .appendTo(fromLabel)
+    .appendTo(toLabel)
+    
 });
+
 
 // fetch('https://v6.exchangerate-api.com/v6/'+api+'/pair/'+base_currency+'/'+target_currency)
 // .then(res => res.json())
