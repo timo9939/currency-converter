@@ -59,7 +59,7 @@ resultNumber=(inputAmountNumber*rate_num_form)
 console.log("resultNumber is",resultNumber)
 console.log("result number is",typeof(resultNumber))
 
-result.text(resultNumber)
+result.text(`${inputAmountNumber} ${base_currency}=${resultNumber} ${target_currency}`)
 })
 
 // .then( ()=>{
